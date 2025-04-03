@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №3</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div id="app-container">
+        <div id="info-section">
+            <h1>Калькулятор</h1>
+            <p class="description">Калькулятор розрахунку прибутку сонячних електростанцій
+                з встановленою системою прогнозування сонячної потужності</p>
+        </div>
+        <form id="calculator-form">
+            <div class="input-block">
+                <label for="average_daily_capacity">Середньодобова потужність (МВт)</label>
+                <input id="average_daily_capacity" name="average_daily_capacity" type="number" step="any" value="5.0" required>
+            </div>
+            <div class="input-block">
+                <label for="electricity_cost">Вартість електроенергії (грн/кВт⋅год)</label>
+                <input id="electricity_cost" name="electricity_cost" type="number" step="any" value="7.0" required>
+            </div>
+            <div class="input-block">
+                <label for="standard_deviation">Середньоквадратичне відхилення (МВт)</label>
+                <input id="standard_deviation" name="standard_deviation" type="number" step="any" value="1.0" required>
+            </div>
+            <button type="submit" class="process-button">Розрахувати</button>
+        </form>
+        <script src="../static/script.js"></script>
+    </div>
+</body>
+</html>

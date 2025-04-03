@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання #1</title>
+    <link rel="stylesheet" href="../static/css/calc.css">
+</head>
+<body>
+<div id="app-container">
+    <div id="info-section">
+        <h1>Калькулятор #1</h1>
+        <p class="description">Калькулятор для порівняння надійності
+            одноколової та двоколової систем електропередачі</p>
+    </div>
+    <form id="calculator-form">
+        <div class="input-block">
+            <label for="pl110Q">ПЛ-110 кВ</label>
+            <input id="pl110Q" name="pl110Q" type="number" value="10" required>
+        </div>
+        <div class="input-block">
+            <label for="pl35Q">ПЛ-35 кВ</label>
+            <input id="pl35Q" name="pl35Q" type="number" value="0" required>
+        </div>
+        <div class="input-block">
+            <label for="pl10Q">ПЛ-10 кВ</label>
+            <input id="pl10Q" name="pl10Q" type="number" value="0" required>
+        </div>
+        <div class="input-block">
+            <label for="kl10TrenchQ">КЛ-10 кВ (траншея)</label>
+            <input id="kl10TrenchQ" name="kl10TrenchQ" type="number" value="0" required>
+        </div>
+        <div class="input-block">
+            <label for="kl10CableQ">КЛ-10 кВ (кабельний канал)</label>
+            <input id="kl10CableQ" name="kl10CableQ" type="number" value="0" required>
+        </div>
+        <div class="input-block">
+            <label for="t110Q">Т-110 кВ</label>
+            <input id="t110Q" name="t110Q" type="number" value="1" required>
+        </div>
+        <div class="input-block">
+            <label for="t35Q">Т-35 кВ</label>
+            <input id="t35Q" name="t35Q" type="number" value="0" required>
+        </div>
+        <div class="input-block">
+            <label for="t10CableNetworkQ">Т-10 кВ (кабельна мережа 10 кВ)</label>
+            <input id="t10CableNetworkQ" name="t10CableNetworkQ" type="number" value="0" required>
+        </div>
+        <div class="input-block">
+            <label for="t10AirQ">Т-10 кВ (повітряна мережа 10 кВ)</label>
+            <input id="t10AirQ" name="t10AirQ" type="number" value="0" required>
+        </div>
+        <div class="input-block">
+            <label for="v110Q">В-110 кВ (елегазовий)</label>
+            <input id="v110Q" name="v110Q" type="number" value="1" required>
+        </div>
+        <div class="input-block">
+            <label for="v10LowOilQ">В-10 кВ (малооливний)</label>
+            <input id="v10LowOilQ" name="v10LowOilQ" type="number" value="1" required>
+        </div>
+        <div class="input-block">
+            <label for="v10VacuumQ">В-10 кВ (вакуумний)</label>
+            <input id="v10VacuumQ" name="v10VacuumQ" type="number" value="0" required>
+        </div>
+        <div class="input-block">
+            <label for="busBar10Q">Збірні шини 10 кВ на 1 приєднання</label>
+            <input id="busBar10Q" name="busBar10Q" type="number" value="6" required>
+        </div>
+        <div class="input-block">
+            <label for="av038Q">АВ-0.38 кВ</label>
+            <input id="av038Q" name="av038Q" type="number" value="0" required>
+        </div>
+        <div class="input-block">
+            <label for="ed610Q">ЕД-6.10 кВ</label>
+            <input id="ed610Q" name="ed610Q" type="number" value="0" required>
+        </div>
+        <div class="input-block">
+            <label for="ed038Q">ЕД-0.38 кВ</label>
+            <input id="ed038Q" name="ed038Q" type="number" value="0" required>
+        </div>
+        <div id="buttons_section">
+            <svg id="back-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
+            <button type="submit" class="process-button">Розрахувати</button>
+        </div>
+    </form>
+    <script src="../static/js/calc1.js"></script>
+</div>
+</body>
+</html>

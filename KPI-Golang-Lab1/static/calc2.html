@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання #2</title>
+    <link rel="stylesheet" href="../static/css/calc.css">
+</head>
+<body>
+<div id="app-container">
+    <div id="info-section">
+        <h1>Калькулятор #2</h1>
+        <p class="description">Перерахунок елементарного складу та нижчої теплоти згорання
+            мазуту на робочу масу для складу горючої маси мазуту</p>
+    </div>
+    <form id="calculator-form">
+        <div class="input-block">
+            <label for="carbon">Вуглець (C) горючої маси</label>
+            <input id="carbon" name="carbon" type="number" step="any" value="85.5" required>
+        </div>
+        <div class="input-block">
+            <label for="hydrogen">Водень (H) горючої маси</label>
+            <input id="hydrogen" name="hydrogen" type="number" step="any" value="11.20" required>
+        </div>
+        <div class="input-block">
+            <label for="oxygen">Кисень (O) горючої маси</label>
+            <input id="oxygen" name="oxygen" type="number" step="any" value="0.80" required>
+        </div>
+        <div class="input-block">
+            <label for="sulfur">Сірка (S) горючої маси</label>
+            <input id="sulfur" name="sulfur" type="number" step="any" value="2.50" required>
+        </div>
+        <div class="input-block">
+            <label for="combustibleVanadium">Ванадій (V) горючої маси</label>
+            <input id="combustibleVanadium" name="combustibleVanadium" type="number" step="any" value="333.30" required>
+        </div>
+        <div class="input-block">
+            <label for="combustibleLHV">Нижча теплота згорання горючої маси</label>
+            <input id="combustibleLHV" name="combustibleLHV" type="number" step="any" value="40.40" required>
+        </div>
+        <div class="input-block">
+            <label for="rawMoisture">Волога (W) робочої маси</label>
+            <input id="rawMoisture" name="rawMoisture" type="number" step="any" value="2.00" required>
+        </div>
+        <div class="input-block">
+            <label for="dryAsh">Зола (A) сухої маси</label>
+            <input id="dryAsh" name="dryAsh" type="number" step="any" value="0.15" required>
+        </div>
+        <div id="buttons_section">
+            <svg id="back-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
+            <button type="submit" class="process-button">Розрахувати</button>
+        </div>
+    </form>
+    <script src="../static/js/calc2.js"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+@font-face {
+    font-family: JetBrainsMono;
+    src: url(/static/fonts/JetBrainsMono.ttf);
+}
+
+* {
+    font-family: JetBrainsMono, monospace;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 54px 22px 54px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#app-container {
+    width: 522px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.calc-link-button {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 20px;
+    border-left: 2px solid #FF7700;
+    cursor: pointer;
+}
+
+.calc-link-button:hover h2 {
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 20px;
+    color: #2A3439;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: 14px;
+    color: #2A3439;
+    margin: 0;
+}
